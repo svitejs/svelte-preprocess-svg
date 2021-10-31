@@ -87,6 +87,17 @@ module.exports = {
 				node: true,
 				browser: false
 			}
+		},
+		{
+			files: ['packages/e2e-tests/**', 'packages/playground/**'],
+			rules: {
+				'node/no-extraneous-import': 'off',
+				'node/no-extraneous-require': 'off',
+				'no-unused-vars': 'off'
+			},
+			env: {
+				browser: true
+			}
 		}
 	]
 };

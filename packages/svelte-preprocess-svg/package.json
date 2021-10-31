@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/svitejs/svelte-preprocess-svg#readme",
   "devDependencies": {
+    "magic-string": "^0.25.7",
     "uvu": "^0.5.2"
   }
 }

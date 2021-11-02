@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm --dir packages/svelte-preprocess-svg dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test --workspace-concurrency=1",
+    "build": "pnpm --dir packages/svelte-preprocess-svg build",
+    "test": "pnpm --dir packages/svelte-preprocess-svg test",
     "lint": "eslint --ignore-path .gitignore '**/*.{js,ts,svelte,html,svx,md}'",
     "lint:fix": "pnpm run lint -- --fix",
     "format": "prettier --ignore-path .gitignore '**/*.{css,scss,svelte,html,js,ts,svx,md}' --check",

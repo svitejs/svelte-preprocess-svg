@@ -32,8 +32,12 @@
     "url": "https://github.com/svitejs/svelte-preprocess-svg/issues"
   },
   "homepage": "https://github.com/svitejs/svelte-preprocess-svg#readme",
+  "peerDependencies": {
+    "svelte": "^3.44.1"
+  },
   "devDependencies": {
     "magic-string": "^0.25.7",
+    "svelte": "^3.44.1",
     "uvu": "^0.5.2"
   }
 }

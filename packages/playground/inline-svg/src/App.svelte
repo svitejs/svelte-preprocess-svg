@@ -1,3 +1,11 @@
+<script context="module">
+	console.log('foo');
+</script>
+
+<script>
+	const str = '<svg>not really an svg</svg>';
+</script>
+
 <div>
 	<h1>Svelte inline svg</h1>
 	<svg

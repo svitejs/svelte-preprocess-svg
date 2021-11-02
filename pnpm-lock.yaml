@@ -74,9 +74,11 @@ importers:
   packages/svelte-preprocess-svg:
     specifiers:
       magic-string: ^0.25.7
+      svelte: ^3.44.1
       uvu: ^0.5.2
     devDependencies:
       magic-string: 0.25.7
+      svelte: 3.44.1
       uvu: 0.5.2
 
 packages:
@@ -3210,6 +3212,11 @@ packages:
 
   /svelte/3.44.0:
     resolution: {integrity: sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==}
+    engines: {node: '>= 8'}
+    dev: true
+
+  /svelte/3.44.1:
+    resolution: {integrity: sha512-4DrCEJoBvdR689efHNSxIQn2pnFwB7E7j2yLEJtHE/P8hxwZWIphCtJ8are7bjl/iVMlcEf5uh5pJ68IwR09vQ==}
     engines: {node: '>= 8'}
     dev: true
 

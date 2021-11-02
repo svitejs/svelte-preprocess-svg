@@ -33,13 +33,13 @@ export interface SveltePreprocessSvgOptions {
 
 function skip(filename: string, content: string, options?: SveltePreprocessSvgOptions) {
 	if (options?.include && !options.include(filename, content)) {
-		return false;
+		return true;
 	}
 	if (options?.exclude && options.exclude(filename, content)) {
-		return false;
+		return true;
 	}
 	if (!content.includes('<svg ')) {
-		return false;
+		return true;
 	}
 }
 

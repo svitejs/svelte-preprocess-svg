@@ -1,9 +1,8 @@
 {
   "name": "@svitejs/svelte-preprocess-svg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "dominikg",
-  "private": true,
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -18,7 +17,7 @@
   "scripts": {
     "dev": "tsup-node --watch src",
     "build": "tsup-node --dts",
-    "test": "tsm node_modules/uvu/bin.js tests"
+    "test": "tsm node_modules/uvu/bin.js tests -i fixtures"
   },
   "engines": {
     "node": "^12.20 || ^14.13.1 || >= 16"
@@ -32,7 +31,13 @@
     "url": "https://github.com/svitejs/svelte-preprocess-svg/issues"
   },
   "homepage": "https://github.com/svitejs/svelte-preprocess-svg#readme",
+  "keywords": ["svelte","svelte-preprocess","svg"],
+  "peerDependencies": {
+    "svelte": "^3.44.1"
+  },
   "devDependencies": {
+    "magic-string": "^0.25.7",
+    "svelte": "^3.44.1",
     "uvu": "^0.5.2"
   }
 }

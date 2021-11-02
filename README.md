@@ -3,25 +3,15 @@
 [![npm version](https://img.shields.io/npm/v/@svitejs/svelte-preprocess-svg)](https://www.npmjs.com/package/@svitejs/svelte-preprocess-svg)
 [![CI](https://github.com/svitejs/svelte-preprocess-svg/actions/workflows/ci.yml/badge.svg)](https://github.com/svitejs/svelte-preprocess-svg/actions/workflows/ci.yml)
 
-PROJECT TAGLINE HERE
+Optimize inline svg in svelte components
 
-## Installation
+## Features
 
-```bash
-npm install --save-dev @svitejs/svelte-preprocess-svg
-```
-
-## Usage
-
-```js
-// show em how it's done
-```
+- wrap content of `<svg>` in `@html` directive so that the svelte compiler treats it as string instead of generating an extra function call for each childnode.
 
 ## Documentation
 
-- some
-- doc
-- links
+[see here](packages/svelte-preprocess-svg/README.md)
 
 ## Packages
 

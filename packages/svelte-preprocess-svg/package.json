@@ -1,9 +1,8 @@
 {
   "name": "@svitejs/svelte-preprocess-svg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "dominikg",
-  "private": true,
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -32,6 +31,7 @@
     "url": "https://github.com/svitejs/svelte-preprocess-svg/issues"
   },
   "homepage": "https://github.com/svitejs/svelte-preprocess-svg#readme",
+  "keywords": ["svelte","svelte-preprocess","svg"],
   "peerDependencies": {
     "svelte": "^3.44.1"
   },

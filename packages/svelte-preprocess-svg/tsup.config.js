@@ -4,5 +4,6 @@ export const tsup = {
 	format: ['esm', 'cjs'],
 	sourcemap: true,
 	splitting: false,
-	clean: true
+	clean: true,
+	target: 'node14'
 };

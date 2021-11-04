@@ -58,7 +58,10 @@ export function sveltePreprocessSvg(
 				let svg = parsedSvg.svg;
 				for (const transform of transforms) {
 					if (!options?.skipTransform?.(input, transform.name, svg)) {
-						svg = await transform.transform(svg);
+						const result = await transform.transform(svg);
+						if (result != null) {
+							svg = result;
+						}
 					}
 				}
 				s.overwrite(parsedSvg.start, parsedSvg.end, svg);

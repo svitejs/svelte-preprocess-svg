@@ -7,7 +7,29 @@ Optimize inline svg in svelte components
 
 ## Features
 
-- wrap content of `<svg>` in `@html` directive so that the svelte compiler treats it as string instead of generating an extra function call for each childnode.
+- wrap svg content in `@html` to reduce component size
+- svgo transform
+- custom transforms
+- include, exclude and skipTransform options
+
+## Why
+
+Inline svg - especially when they contain many nodes and attributes - can lead to pretty large compiler output with lots of function calls.
+Wrapping the content of the svg in an `{@html content}` directive results in a single string variable inserted with innerHTML.
+
+Check the compiler output in [this repl](https://svelte.dev/repl/b885420f332941f0b9cf47dc05f8ce88?version=3.44.1) for an example
+and also the [benchmark playground project](packages/playground/benchmark), which is bundling all svelte-feather-icons.
+
+| benchmark vendor.js bytes      | uncompressed | gzip  | brotli |
+| ------------------------------ | ------------ | ----- | ------ |
+| **regular**                    | 327975       | 27323 | 19420  |
+| **with svelte-preprocess-svg** | 296567       | 21575 | 15991  |
+| **delta**                      | -10%         | -21%  | -18%   |
+
+## Caveats
+
+The `@html` transform does not work with dynamic svg. It's useful for icons and other static svg that don't contain any svelte directives.
+Dynamic attributes on the `<svg>` itself are ok.
 
 ## Documentation
 

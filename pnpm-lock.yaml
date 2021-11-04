@@ -621,11 +621,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ansi-regex/6.0.1:
-    resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
-    engines: {node: '>=12'}
-    dev: true
-
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
@@ -3230,7 +3225,7 @@ packages:
     resolution: {integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=}
     engines: {node: '>=4'}
     dependencies:
-      ansi-regex: 6.0.1
+      ansi-regex: 5.0.1
     dev: true
 
   /strip-ansi/6.0.1:

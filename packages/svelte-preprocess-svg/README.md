@@ -33,26 +33,51 @@ export default {
 ### options
 
 ```ts
-interface SveltePreprocessSvgOptions {
+export interface SveltePreprocessSvgOptions {
 	/**
 	 * Filter function to only include some files
 	 *
-	 * @param filename
-	 * @param content
+	 * @param {PreprocessorInput} input - filename and content of the file to process
 	 * @return boolean true to include the file
 	 */
-	// eslint-disable-next-line no-unused-vars
-	include?: (filename: string, content?: string) => boolean;
+	include?: (input: PreprocessorInput) => boolean;
 
 	/**
 	 * Filter function to exclude some files
 	 *
-	 * @param filename
-	 * @param content
+	 * @param {PreprocessorInput} input - filename and content of the file to process
 	 * @return boolean true to exclude the file
 	 */
-	// eslint-disable-next-line no-unused-vars
-	exclude?: (filename: string, content?: string) => boolean;
+	exclude?: (input: PreprocessorInput) => boolean;
+
+	/**
+	 * Array of transformers to apply.
+	 * name: unique name of the transform - this is passed to skipTransform
+	 * transform: function to manipulate svg
+	 *
+	 */
+	transforms?: SvgTransform[];
+
+	/**
+	 * enable svgo transform, use object for custom svgo options.
+	 * Without custom options it tries to load svgo config or uses defaults
+	 *
+	 * requires svgo to be installed as devDependency
+	 */
+	svgo?: boolean | object;
+
+	/**
+	 * do not wrap svg content in {@html ``}
+	 */
+	disableAtHtml?: boolean;
+
+	/**
+	 * skip a transform by name
+	 * @param {PreprocessorInput} input - filename and content of the file to process
+	 * @param {string} transform - name of the transform
+	 * @param {string} svg - the svg to transform (previous transforms are already applied!)
+	 */
+	skipTransform?: (input: PreprocessorInput, transform: string, svg: string) => boolean;
 
 	/**
 	 * Set to true to use a simple string search instead of svelte.parse.

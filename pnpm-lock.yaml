@@ -73,11 +73,13 @@ importers:
 
   packages/svelte-preprocess-svg:
     specifiers:
+      '@types/svgo': ^2.6.0
       magic-string: ^0.25.7
       svelte: ^3.44.1
       svgo: ^2.8.0
       uvu: ^0.5.2
     devDependencies:
+      '@types/svgo': 2.6.0
       magic-string: 0.25.7
       svelte: 3.44.1
       svgo: 2.8.0
@@ -431,6 +433,12 @@ packages:
 
   /@types/semver/6.2.3:
     resolution: {integrity: sha512-KQf+QAMWKMrtBMsB8/24w53tEsxllMj6TuA80TT/5igJalLI/zm0L3oXRbIAl4Ohfc85gyHX/jhMwsVkmhLU4A==}
+    dev: true
+
+  /@types/svgo/2.6.0:
+    resolution: {integrity: sha512-VSdhb3KTOglle1SLQD4+TB6ezj/MS3rN98gOUkXzbTUhG8VjFKHXN3OVgEFlTnW5fYBxt+lzZlD3PFqkwMj36Q==}
+    dependencies:
+      '@types/node': 16.11.6
     dev: true
 
   /@types/unist/2.0.6:

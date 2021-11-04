@@ -22,8 +22,13 @@ export function createSvgoTransform(options: object | boolean): SvgTransform {
 			}
 
 			try {
+				// ensure attributes are quoted, svgo doesn't support unquoted, see https://github.com/svg/svgo/issues/678
+				svg = svg.replace(/=(\{[^}]*})(\s)/g, '="$1"$2');
 				const result = await svgo.optimize(svg, config);
-				return result.data;
+				if (result.error) {
+					throw result.error;
+				}
+				return result.data || svg;
 			} catch (e) {
 				console.error('svgo failed', e);
 				return svg;

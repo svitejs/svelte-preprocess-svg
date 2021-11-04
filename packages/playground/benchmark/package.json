@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "dev:svg": "USE_SVG=1 vite dev",
+    "dev:svg": "USE_SVG=1 vite",
     "benchmark": "run-s build:regular build:svg",
     "build:regular": "vite build",
     "build:svg": "USE_SVG=1 vite build"

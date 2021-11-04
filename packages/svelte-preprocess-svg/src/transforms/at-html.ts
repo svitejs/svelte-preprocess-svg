@@ -23,7 +23,7 @@ function atHtml(svg: string): string {
 
 export function createAtHtmlTransform(): SvgTransform {
 	return {
-		name: 'atHtml',
+		name: '@html',
 		transform: atHtml
 	};
 }

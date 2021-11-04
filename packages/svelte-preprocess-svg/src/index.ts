@@ -8,6 +8,8 @@ import { createSvgoTransform } from './transforms/svgo';
 import { stringParse } from './parsers/string-parse';
 import { svelteParse } from './parsers/svelte-parse';
 
+const RESERVED_TRANSFORM_NAMES = ['svgo', '@html'];
+
 function skip(input: PreprocessorInput, options?: SveltePreprocessSvgOptions) {
 	if (options?.include && !options.include(input)) {
 		return true;
@@ -22,6 +24,11 @@ function skip(input: PreprocessorInput, options?: SveltePreprocessSvgOptions) {
 
 function createTransforms(options?: SveltePreprocessSvgOptions) {
 	const transforms = options?.transforms || [];
+	for (const reserved of RESERVED_TRANSFORM_NAMES) {
+		if (transforms.some((x) => x.name === reserved)) {
+			throw new Error(`transform name "${reserved}" is reserved for internal use`);
+		}
+	}
 	if (options?.svgo) {
 		transforms.push(createSvgoTransform(options.svgo));
 	}

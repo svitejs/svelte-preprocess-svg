@@ -20,7 +20,7 @@
     "test": "tsm node_modules/uvu/bin.js tests -i fixtures"
   },
   "engines": {
-    "node": "^12.20 || ^14.13.1 || >= 16"
+    "node": "^14.13.1 || >= 16"
   },
   "repository": {
     "type": "git",
@@ -37,11 +37,19 @@
     "svg"
   ],
   "peerDependencies": {
-    "svelte": "^3.44.1"
+    "svelte": "^3.44.1",
+    "svgo": "^2.8.0"
+  },
+  "peerDependenciesMeta": {
+    "svgo": {
+      "optional": true
+    }
   },
   "devDependencies": {
+    "@types/svgo": "^2.6.0",
     "magic-string": "^0.25.7",
     "svelte": "^3.44.1",
+    "svgo": "^2.8.0",
     "uvu": "^0.5.2"
   }
 }

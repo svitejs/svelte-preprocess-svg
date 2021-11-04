@@ -98,6 +98,13 @@ module.exports = {
 			env: {
 				browser: true
 			}
+		},
+		{
+			files: ['packages/svelte-preprocess-svg/tests/**/*.ts'],
+			rules: {
+				'node/no-missing-import': 'off'
+			}
 		}
-	]
+	],
+	ignorePatterns: ['packages/svelte-preprocess-svg/tests/fixtures/**/*.svelte']
 };

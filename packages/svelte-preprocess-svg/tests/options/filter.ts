@@ -1,33 +1,14 @@
 import { test } from 'uvu';
-import * as assert from 'uvu/assert';
-// eslint-disable-next-line node/no-missing-import
-import { sveltePreprocessSvg } from '../src/index.js';
-import { promises as fs } from 'fs';
 import * as path from 'path';
-
-test('default', async () => {
-	const filename = path.resolve('tests/fixtures/strict.svelte');
-	const content = await fs.readFile(filename, 'utf-8');
-	const preprocess = sveltePreprocessSvg();
-	const result = await preprocess.markup({ content, filename });
-	const expected = await fs.readFile(filename + '.expected', 'utf-8');
-	assert.fixture(result.code, expected);
-});
-
-test('useSimpleStringParser', async () => {
-	const filename = path.resolve('tests/fixtures/simple.svelte');
-	const content = await fs.readFile(filename, 'utf-8');
-	const preprocess = await sveltePreprocessSvg({ useSimpleStringParser: true });
-	const result = await preprocess.markup({ content, filename });
-	const expected = await fs.readFile(filename + '.expected', 'utf-8');
-	assert.fixture(result.code, expected);
-});
+import { promises as fs } from 'fs';
+import { sveltePreprocessSvg } from '../../src/index.js';
+import * as assert from 'uvu/assert';
 
 test('include', async () => {
 	const filename = path.resolve('tests/fixtures/strict.svelte');
 	const content = await fs.readFile(filename, 'utf-8');
 	const preprocess = await sveltePreprocessSvg({
-		include: (filename) => {
+		include: ({ filename }) => {
 			return filename.includes('strict.svelte');
 		}
 	});
@@ -41,7 +22,7 @@ test('exclude', async () => {
 	const filename = path.resolve('tests/fixtures/strict.svelte');
 	const content = await fs.readFile(filename, 'utf-8');
 	const preprocess = await sveltePreprocessSvg({
-		exclude: (filename) => {
+		exclude: ({ filename }) => {
 			return filename.includes('strict.svelte');
 		}
 	});

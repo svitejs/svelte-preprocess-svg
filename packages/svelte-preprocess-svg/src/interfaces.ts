@@ -1,38 +1,19 @@
-# @svitejs/svelte-preprocess-svg
+export interface SvgTransform {
+	name: string;
+	// eslint-disable-next-line no-unused-vars
+	transform: (svg: string) => string | Promise<string>;
+}
+export interface ParsedSvg {
+	svg: string;
+	start: number;
+	end: number;
+}
 
-Optimize inline svg in svelte components
+export interface PreprocessorInput {
+	content: string;
+	filename: string;
+}
 
-## Installation
-
-```bash
-npm install --save-dev @svitejs/svelte-preprocess-svg
-```
-
-## Usage
-
-svelte.config.js
-
-```js
-import { sveltePreprocessSvg } from '@svitejs/svelte-preprocess-svg';
-//...
-export default {
-	//...
-	preprocess: [
-		//...
-		// sveltePreprocessSvg must be used AFTER other markup preprocessors like mdsvex
-		sveltePreprocessSvg({
-			/* options */
-		})
-	]
-	//...
-};
-```
-
-## Documentation
-
-### options
-
-```ts
 export interface SveltePreprocessSvgOptions {
 	/**
 	 * Filter function to only include some files
@@ -40,6 +21,7 @@ export interface SveltePreprocessSvgOptions {
 	 * @param {PreprocessorInput} input - filename and content of the file to process
 	 * @return boolean true to include the file
 	 */
+	// eslint-disable-next-line no-unused-vars
 	include?: (input: PreprocessorInput) => boolean;
 
 	/**
@@ -48,6 +30,7 @@ export interface SveltePreprocessSvgOptions {
 	 * @param {PreprocessorInput} input - filename and content of the file to process
 	 * @return boolean true to exclude the file
 	 */
+	// eslint-disable-next-line no-unused-vars
 	exclude?: (input: PreprocessorInput) => boolean;
 
 	/**
@@ -56,11 +39,11 @@ export interface SveltePreprocessSvgOptions {
 	 * transform: function to manipulate svg
 	 *
 	 */
+	// eslint-disable-next-line no-unused-vars
 	transforms?: SvgTransform[];
 
 	/**
-	 * enable svgo transform, use object for custom svgo options.
-	 * Without custom options it tries to load svgo config or uses defaults
+	 * enable svgo transform, use object for custom svgo options
 	 *
 	 * requires svgo to be installed as devDependency
 	 */
@@ -77,6 +60,7 @@ export interface SveltePreprocessSvgOptions {
 	 * @param {string} transform - name of the transform
 	 * @param {string} svg - the svg to transform (previous transforms are already applied!)
 	 */
+	// eslint-disable-next-line no-unused-vars
 	skipTransform?: (input: PreprocessorInput, transform: string, svg: string) => boolean;
 
 	/**
@@ -85,8 +69,3 @@ export interface SveltePreprocessSvgOptions {
 	 */
 	useSimpleStringParser?: boolean;
 }
-```
-
-## License
-
-[MIT](./LICENSE)

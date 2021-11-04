@@ -8,11 +8,7 @@
 
 * Add options for svgo and custom transforms ([#4](https://github.com/svitejs/svelte-preprocess-svg/pull/4))
 
-  Breaking: Some signature changes in config options
-
-### Minor Changes
-
-- Initial implementation ([#4](https://github.com/svitejs/svelte-preprocess-svg/pull/4))
+- Some signature changes in config options ([#4](https://github.com/svitejs/svelte-preprocess-svg/pull/4))
 
 ## 0.1.0
 

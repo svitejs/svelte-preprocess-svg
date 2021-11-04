@@ -23,11 +23,20 @@ test('useSimpleStringParser', async () => {
 	assert.fixture(result.code, expected);
 });
 
+test('escape', async () => {
+	const filename = path.resolve('tests/fixtures/escape.svelte');
+	const content = await fs.readFile(filename, 'utf-8');
+	const preprocess = await sveltePreprocessSvg();
+	const result = await preprocess.markup({ content, filename });
+	const expected = await fs.readFile(filename + '.expected', 'utf-8');
+	assert.fixture(result.code, expected);
+});
+
 test('include', async () => {
 	const filename = path.resolve('tests/fixtures/strict.svelte');
 	const content = await fs.readFile(filename, 'utf-8');
 	const preprocess = await sveltePreprocessSvg({
-		include: (filename) => {
+		include: ({ filename }) => {
 			return filename.includes('strict.svelte');
 		}
 	});
@@ -41,7 +50,7 @@ test('exclude', async () => {
 	const filename = path.resolve('tests/fixtures/strict.svelte');
 	const content = await fs.readFile(filename, 'utf-8');
 	const preprocess = await sveltePreprocessSvg({
-		exclude: (filename) => {
+		exclude: ({ filename }) => {
 			return filename.includes('strict.svelte');
 		}
 	});

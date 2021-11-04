@@ -31,13 +31,25 @@
     "url": "https://github.com/svitejs/svelte-preprocess-svg/issues"
   },
   "homepage": "https://github.com/svitejs/svelte-preprocess-svg#readme",
-  "keywords": ["svelte","svelte-preprocess","svg"],
+  "keywords": [
+    "svelte",
+    "svelte-preprocess",
+    "svg"
+  ],
   "peerDependencies": {
-    "svelte": "^3.44.1"
+    "svelte": "^3.44.1",
+    "svgo": "^2.8.0"
+  },
+  "peerDependenciesMeta": {
+    "svgo": {
+      "optional": true
+    }
   },
   "devDependencies": {
+    "@types/svgo": "^2.6.0",
     "magic-string": "^0.25.7",
     "svelte": "^3.44.1",
+    "svgo": "^2.8.0",
     "uvu": "^0.5.2"
   }
 }

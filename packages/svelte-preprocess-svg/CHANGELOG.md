@@ -1,5 +1,11 @@
 # @svitejs/svelte-preprocess-svg
 
+## 1.0.1
+
+### Patch Changes
+
+- fix useSimpleStringParser off-by-one error with closing svg tag ([#8](https://github.com/svitejs/svelte-preprocess-svg/pull/8))
+
 ## 1.0.0
 
 ### Major Changes

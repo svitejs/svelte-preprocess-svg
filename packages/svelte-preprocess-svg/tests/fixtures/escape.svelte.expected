@@ -3,9 +3,5 @@
 </script>
 
 <div>
-	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">{@html `
-		<text x="0" y="0">&#96;</text><!-- backtick that would end the @html early -->
-		<text x="0" y="8">&#123;foo&#125;</text><!-- curlies could mess with @html -->
-		<text x="0" y="16">&#125;</text><!-- another curly -->
-	`}</svg>
+	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">{@html `<text>&#96;</text><text y="8">{foo}</text><text y="16">}</text>`}</svg>
 </div>

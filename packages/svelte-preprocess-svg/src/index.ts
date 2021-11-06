@@ -17,7 +17,7 @@ function skip(input: PreprocessorInput, options?: SveltePreprocessSvgOptions) {
 	if (options?.exclude && options.exclude(input)) {
 		return true;
 	}
-	if (!input.content.includes('<svg ')) {
+	if (!input.content.includes('<svg')) {
 		return true;
 	}
 }

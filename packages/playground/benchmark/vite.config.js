@@ -7,7 +7,7 @@ const svg = !!process.env.USE_SVG;
 export default defineConfig({
 	plugins: [
 		svelte({
-			preprocess: svg ? [sveltePreprocessSvg({ svgo: true })] : [],
+			preprocess: svg ? [sveltePreprocessSvg({ svgo: true, useSimpleStringParser: true })] : [],
 			experimental: {
 				prebundleSvelteLibraries: true
 			}

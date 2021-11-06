@@ -12,17 +12,17 @@ export function stringParse(input: PreprocessorInput): ParsedSvg[] {
 }
 
 function nextSvg(content: string, pos: number = 0) {
-	const start = content.indexOf('<svg ', pos);
+	const start = content.indexOf('<svg', pos);
 	if (start < 0) {
 		return;
 	}
 
-	const closeTagStart = content.indexOf('</svg', start);
+	const closeTagStart = content.indexOf('</svg', start + 5);
 	if (closeTagStart < 0) {
 		return;
 	}
-	const end = content.indexOf('>', closeTagStart + 5);
-	if (end < 0) {
+	const end = content.indexOf('>', closeTagStart + 4) + 1;
+	if (end < 1) {
 		return;
 	}
 	return {

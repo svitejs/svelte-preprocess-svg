@@ -11,7 +11,7 @@ export interface ParsedSvg {
 
 export interface PreprocessorInput {
 	content: string;
-	filename: string;
+	filename?: string;
 }
 
 export interface SveltePreprocessSvgOptions {

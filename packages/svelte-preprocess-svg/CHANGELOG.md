@@ -1,5 +1,11 @@
 # @svitejs/svelte-preprocess-svg
 
+## 1.0.2
+
+### Patch Changes
+
+- update PreprocessorInput interface to match new svelte version ([#13](https://github.com/svitejs/svelte-preprocess-svg/pull/13))
+
 ## 1.0.1
 
 ### Patch Changes

@@ -46,10 +46,10 @@
     }
   },
   "devDependencies": {
-    "@types/svgo": "^2.6.0",
+    "@types/svgo": "^2.6.1",
     "magic-string": "^0.25.7",
-    "svelte": "^3.44.3",
+    "svelte": "^3.45.0",
     "svgo": "^2.8.0",
-    "uvu": "^0.5.2"
+    "uvu": "^0.5.3"
   }
 }

@@ -14,7 +14,7 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       cross-env: ^7.0.3
-      dotenv: ^10.0.0
+      dotenv: ^14.3.0
       eslint: ^8.7.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-html: ^6.2.0
@@ -39,7 +39,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
       '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
       cross-env: 7.0.3
-      dotenv: 10.0.0
+      dotenv: 14.3.0
       eslint: 8.7.0
       eslint-config-prettier: 8.3.0_eslint@8.7.0
       eslint-plugin-html: 6.2.0
@@ -1129,9 +1129,9 @@ packages:
       domhandler: 4.3.0
     dev: true
 
-  /dotenv/10.0.0:
-    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
-    engines: {node: '>=10'}
+  /dotenv/14.3.0:
+    resolution: {integrity: sha512-PCTcOQSXVo9FI1dB7AichJXMEvmiGCq0gnCpjfDUc8505uR+2MeLXWe+Ue4PN5UXa2isHSa78sr7L59fk+2mnQ==}
+    engines: {node: '>=12'}
     dev: true
 
   /emoji-regex/8.0.0:

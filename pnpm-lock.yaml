@@ -11,11 +11,10 @@ importers:
       '@changesets/cli': ^2.20.0
       '@changesets/get-github-info': ^0.5.0
       '@svitejs/changesets-changelog-github-compact': ^0.1.0
-      '@types/node': ^16.11.22
+      '@types/node': ^17.0.17
       '@typescript-eslint/eslint-plugin': ^5.11.0
       '@typescript-eslint/parser': ^5.11.0
       cross-env: ^7.0.3
-      dotenv: ^14.3.2
       eslint: ^8.8.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-html: ^6.2.0
@@ -37,11 +36,10 @@ importers:
       '@changesets/cli': 2.20.0
       '@changesets/get-github-info': 0.5.0
       '@svitejs/changesets-changelog-github-compact': 0.1.0
-      '@types/node': 16.11.22
+      '@types/node': 17.0.17
       '@typescript-eslint/eslint-plugin': 5.11.0_de5a1ddccd75ca1e499b8b8491d3dcba
       '@typescript-eslint/parser': 5.11.0_eslint@8.8.0+typescript@4.5.5
       cross-env: 7.0.3
-      dotenv: 14.3.2
       eslint: 8.8.0
       eslint-config-prettier: 8.3.0_eslint@8.8.0
       eslint-plugin-html: 6.2.0
@@ -458,8 +456,8 @@ packages:
     resolution: {integrity: sha512-7N8AOYWWYuw0g+K+GKCmIwfU1VMHcexYNpLPYzFZ4Uq2W6C/ptfeC7XhXgy/4pcwhz/9KoS5yijMfnYQ0u0Udw==}
     dev: true
 
-  /@types/node/16.11.22:
-    resolution: {integrity: sha512-DYNtJWauMQ9RNpesl4aVothr97/tIJM8HbyOXJ0AYT1Z2bEjLHyfjOBPAQQVMLf8h3kSShYfNk8Wnto8B2zHUA==}
+  /@types/node/17.0.17:
+    resolution: {integrity: sha512-e8PUNQy1HgJGV3iU/Bp2+D/DXh3PYeyli8LgIwsQcs1Ar1LoaWHSIT6Rw+H2rNJmiq6SNWiDytfx8+gYj7wDHw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1142,11 +1140,6 @@ packages:
       dom-serializer: 1.3.2
       domelementtype: 2.2.0
       domhandler: 4.3.0
-    dev: true
-
-  /dotenv/14.3.2:
-    resolution: {integrity: sha512-vwEppIphpFdvaMCaHfCEv9IgwcxMljMw2TnAQBB4VWPvzXQLTb82jwmdOKzlEVUL3gNFT4l4TPKO+Bn+sqcrVQ==}
-    engines: {node: '>=12'}
     dev: true
 
   /dotenv/16.0.0:

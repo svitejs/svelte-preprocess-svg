@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.5.0/schema.json",
-  "changelog": ["../scripts/changelog-github-custom.js", { "repo": "svitejs/svelte-preprocess-svg" }],
+  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "svitejs/svelte-preprocess-svg" }],
   "commit": false,
   "linked": [],
   "access": "public",

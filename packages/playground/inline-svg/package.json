@@ -12,6 +12,6 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37",
     "@svitejs/svelte-preprocess-svg": "workspace:*",
     "svelte": "^3.46.4",
-    "vite": "^2.8.1"
+    "vite": "^2.8.4"
   }
 }

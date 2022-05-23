@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@types/svgo": "^2.6.3",
-    "magic-string": "^0.26.1",
+    "magic-string": "^0.26.2",
     "svelte": "^3.48.0",
     "svgo": "^2.8.0",
     "uvu": "^0.5.3"

@@ -65,26 +65,26 @@ importers:
       npm-run-all: ^4.1.5
       svelte: ^3.49.0
       svelte-feather-icons: ^4.0.0
-      vite: ^3.0.6
+      vite: ^3.0.7
     devDependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.6
+      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.7
       '@svitejs/svelte-preprocess-svg': link:../../svelte-preprocess-svg
       npm-run-all: 4.1.5
       svelte: 3.49.0
       svelte-feather-icons: 4.0.0
-      vite: 3.0.6
+      vite: 3.0.7
 
   packages/playground/inline-svg:
     specifiers:
       '@sveltejs/vite-plugin-svelte': ^1.0.1
       '@svitejs/svelte-preprocess-svg': workspace:*
       svelte: ^3.49.0
-      vite: ^3.0.6
+      vite: ^3.0.7
     devDependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.6
+      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.7
       '@svitejs/svelte-preprocess-svg': link:../../svelte-preprocess-svg
       svelte: 3.49.0
-      vite: 3.0.6
+      vite: 3.0.7
 
   packages/svelte-preprocess-svg:
     specifiers:
@@ -425,7 +425,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.6:
+  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.7:
     resolution: {integrity: sha512-PorCgUounn0VXcpeJu+hOweZODKmGuLHsLomwqSj+p26IwjjGffmYQfVHtiTWq+NqaUuuHWWG7vPge6UFw4Aeg==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
@@ -443,7 +443,7 @@ packages:
       magic-string: 0.26.2
       svelte: 3.49.0
       svelte-hmr: 0.14.12_svelte@3.49.0
-      vite: 3.0.6
+      vite: 3.0.7
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3943,8 +3943,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/3.0.6:
-    resolution: {integrity: sha512-pjfsWIzfUlQME/VAmU6SsjdHkTt6WAHysuqPkHDcjzNu6IGtxDSZ/VfRYOwHaCqX4M3Ivz0kxuSfAPM6gAIX+w==}
+  /vite/3.0.7:
+    resolution: {integrity: sha512-dILhvKba1mbP1wCezVQx/qhEK7/+jVn9ciadEcyKMMhZpsuAi/eWZfJRMkmYlkSFG7Qq9NvJbgFq4XOBxugJsA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:

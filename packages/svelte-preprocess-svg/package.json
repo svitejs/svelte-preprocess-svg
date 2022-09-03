@@ -46,9 +46,9 @@
     }
   },
   "devDependencies": {
-    "@types/svgo": "^2.6.3",
-    "magic-string": "^0.26.2",
-    "svelte": "^3.49.0",
+    "@types/svgo": "^2.6.4",
+    "magic-string": "^0.26.3",
+    "svelte": "^3.50.0",
     "svgo": "^2.8.0",
     "uvu": "^0.5.6"
   }

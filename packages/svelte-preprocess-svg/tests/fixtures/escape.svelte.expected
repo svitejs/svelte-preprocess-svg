@@ -3,5 +3,5 @@
 </script>
 
 <div>
-	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">{@html `<text>&#96;</text><text y="8">{foo}</text><text y="16">}</text>`}</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">{@html `<text>&#96;</text><text y="8">{foo}</text><text y="16">}</text>`}</svg>
 </div>

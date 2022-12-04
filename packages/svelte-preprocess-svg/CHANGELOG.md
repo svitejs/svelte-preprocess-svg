@@ -1,5 +1,11 @@
 # @svitejs/svelte-preprocess-svg
 
+## 2.0.0
+
+### Major Changes
+
+- update to svgo 3.0 ([#58](https://github.com/svitejs/svelte-preprocess-svg/pull/58))
+
 ## 1.0.2
 
 ### Patch Changes

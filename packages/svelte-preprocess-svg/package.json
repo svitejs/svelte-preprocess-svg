@@ -38,7 +38,7 @@
   ],
   "peerDependencies": {
     "svelte": "^3.44.1",
-    "svgo": "^2.8.0"
+    "svgo": "^3.0.0"
   },
   "peerDependenciesMeta": {
     "svgo": {
@@ -49,7 +49,7 @@
     "@types/svgo": "^2.6.4",
     "magic-string": "^0.27.0",
     "svelte": "^3.53.1",
-    "svgo": "^2.8.0",
+    "svgo": "^3.0.0",
     "uvu": "^0.5.6"
   }
 }

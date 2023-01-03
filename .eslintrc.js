@@ -32,7 +32,8 @@ module.exports = {
 		'node/no-missing-import': [
 			'error',
 			{
-				tryExtensions: ['.js', '.ts', '.json', '.node']
+				tryExtensions: ['.js', '.ts', '.json', '.node'],
+				allowModules: ['@sveltejs/vite-plugin-svelte']
 			}
 		]
 	},

@@ -11,7 +11,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.4.0",
     "@svitejs/svelte-preprocess-svg": "workspace:2.0.0",
-    "svelte": "^3.53.1",
-    "vite": "^3.2.4"
+    "svelte": "^3.55.0",
+    "vite": "^3.2.5"
   }
 }

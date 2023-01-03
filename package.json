@@ -17,7 +17,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
     "@changesets/get-github-info": "^0.5.1",
-    "@svitejs/changesets-changelog-github-compact": "^0.1.1",
+    "@svitejs/changesets-changelog-github-compact": "^1.0.0",
     "@types/node": "^18.11.10",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",

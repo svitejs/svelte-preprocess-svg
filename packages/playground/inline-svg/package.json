@@ -9,9 +9,9 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.4.1",
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
     "@svitejs/svelte-preprocess-svg": "workspace:2.0.0",
-    "svelte": "^3.59.1",
-    "vite": "^4.3.9"
+    "svelte": "^3.59.2",
+    "vite": "^4.4.2"
   }
 }

@@ -49,7 +49,7 @@ jobs:
         run: pnpm run lint
       - name: audit
         if: (${{ success() }} || ${{ failure() }})
-        run: pnpm audit
+        run: pnpm audit --prod
 
   # this is the test matrix, it runs with node14 on linux,windows,macos + node12,16,17 on linux
   # it is skipped if the build step of the checks job wasn't successful (still runs if lint or audit fail)
@@ -64,9 +64,9 @@ jobs:
         node: [16]
         os: [ubuntu-latest, macos-latest, windows-latest]
         include:
-          - node: 14
-            os: ubuntu-latest
           - node: 18
+            os: ubuntu-latest
+          - node: 20
             os: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

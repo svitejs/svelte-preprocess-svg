@@ -19,10 +19,10 @@
     "@changesets/get-github-info": "^0.5.2",
     "@svitejs/changesets-changelog-github-compact": "^1.1.0",
     "@types/node": "^18.16.16",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.9",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.42.0",
+    "eslint": "^8.54.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-markdown": "^3.0.0",
@@ -46,9 +46,9 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@7.1.0",
+  "packageManager": "pnpm@8.10.2",
   "engines": {
-    "pnpm": "^7.1.0",
+    "pnpm": "^8.0.0",
     "yarn": "forbidden, use pnpm",
     "npm": "forbidden, use pnpm",
     "node": "^12.20 || ^14.13.1 || >= 16"
